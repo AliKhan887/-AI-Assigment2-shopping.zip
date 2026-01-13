@@ -1,1 +1,16 @@
-MAIN assigment code  regression Analysis
+Objective:
+The main goal of this project was to build an AI that predicts if an online shopper will actually complete a purchase or just leave without buying. 
+This is useful because if a website knows a user might not buy, they could show a discount code to encourage them.
+
+Dataset: I used a CSV file containing thousands of user sessions with "evidence" columns like page duration, browser type, and bounce rates.
+The most important part is the "Revenue" column, which is the label I used to train the model to distinguish between buyers and non-buyers.
+
+Methodology: 
+I implemented a K-Nearest Neighbor classifier (with k=1) using the `scikit-learn` library, which predicts intent by finding the most similar past user.
+I also split the data into training and testing sets to fairly evaluate how well the model works on new data it hasn't seen before.
+
+Results: 
+True Positive Rate (Sensitivity): 37.84%
+True Negative Rate (Specificity): 91.73%
+
+
